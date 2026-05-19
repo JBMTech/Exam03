@@ -7,4 +7,19 @@ def string_sculptor(text: str) -> str:
     El primer carácter alfabético debe ser minúscula, el segundo
     mayúscula, el tercero minúscula, y así sucesivamente.
     """
-    ...
+    result = ""
+    count = 0
+    for i in range(len(text)):
+        if text[i].isalpha():
+            if count % 2 == 0:
+                result += text[i].lower()
+            else:
+                result += text[i].upper()
+            count += 1
+        else:
+            result += text[i]
+        
+    return result
+
+if __name__ == "__main__":
+    print(string_sculptor("hello"))

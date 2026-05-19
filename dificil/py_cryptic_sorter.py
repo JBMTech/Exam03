@@ -1,3 +1,11 @@
+def count_vowels(word: str) -> int:
+    vowels = "aeiou"
+    count = 0
+
+    for i in word.lower():
+        if i in vowels:
+            count += 1
+    return count
 
 def cryptic_sorter(strings: list[str]) -> list[str]:
     """
@@ -14,4 +22,8 @@ def cryptic_sorter(strings: list[str]) -> list[str]:
     - Mayúsculas y minúsculas mezcladas (tratar como minúsculas al ordenar)
     - Caracteres especiales (ignorarlos al contar vocales)
     """
-    ...
+    return sorted(strings, key=lambda word: (
+        len(word),
+        word.lower(),
+        count_vowels(word))
+    )

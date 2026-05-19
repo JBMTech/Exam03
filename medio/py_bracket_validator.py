@@ -10,52 +10,15 @@ def bracket_validator(s: str) -> bool:
     - Devolver False si faltan pares o el anidamiento es incorrecto
     - Ignorar caracteres que no sean paréntesis
     """
-    result = " "
+    result = "    "
 
-    s.replace("()", " ").replace("[]", " ").replace("{}", " ")
-    if s == result:
-        return True
-    else:
-        return False
+    while s:
+        s = s.replace("()", "").replace("[]", "").replace("{}", "")
+        if s == result:
+            return False
+        result = s
+    return True
 
 
 if __name__ == "__main__":
-    print(bracket_validator("()"))
-
-
-# Entrada
-# bracket_validator("()")
-# Salida
-# True
-# Entrada
-# bracket_validator("()[]{}")
-# Salida
-# True
-# Entrada
-# bracket_validator("(]")
-# Salida
-# False
-# Entrada
-# bracket_validator("([)]")
-# Salida
-# False
-# Entrada
-# bracket_validator("{[]}")
-# Salida
-# True
-# Entrada
-# bracket_validator("hello(world)[test]{code}")
-# Salida
-# True
-# Entrada
-# bracket_validator("((()))")
-# Salida
-# True
-# Entrada
-# bracket_validator("((())")
-# Salida
-# False
-# Entrada
-# bracket_validator("")
-# Salida
-# True
+    print(bracket_validator("{[]}"))
