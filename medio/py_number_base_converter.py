@@ -46,35 +46,3 @@ def number_base_converter(number: str, from_base: int, to_base: int) -> str:
 
 if __name__ == "__main__":
     print(number_base_converter("G", 16, 10))
-# Entrada
-# number_base_converter("1010", 2, 10)
-# Salida
-# "10"
-# Entrada
-# number_base_converter("FF", 16, 10)
-# Salida
-# "255"
-# Entrada
-# number_base_converter("255", 10, 16)
-# Salida
-# "FF"
-# Entrada
-# number_base_converter("123", 10, 2)
-# Salida
-# "1111011"
-# Entrada
-# number_base_converter("Z", 36, 10)
-# Salida
-# "35"
-# Entrada
-# number_base_converter("35", 10, 36)
-# Salida
-# "Z"
-# Entrada
-# number_base_converter("123", 1, 10)
-# Salida
-# "ERROR"
-# Entrada
-# number_base_converter("G", 16, 10)
-# Salida
-# "ERROR"

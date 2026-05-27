@@ -20,24 +20,3 @@ def mirror_matrix(matrix: list[list[int]]) -> list[list[int]]:
 if __name__ == "__main__":
     print(mirror_matrix([[1, 2, 3, 4]]))
 
-
-# Entrada
-# mirror_matrix([[1, 2, 3], [4, 5, 6]])
-# Salida
-# [[3, 2, 1], [6, 5, 4]]
-# Entrada
-# mirror_matrix([[1, 2], [3, 4], [5, 6]])
-# Salida
-# [[2, 1], [4, 3], [6, 5]]
-# Entrada
-# mirror_matrix([[7]])
-# Salida
-# [[7]]
-# Entrada
-# mirror_matrix([[1, 2, 3, 4]])
-# Salida
-# [[4, 3, 2, 1]]
-# Entrada
-# mirror_matrix([[-1, -2], [-3, -4]])
-# Salida
-# [[-2, -1], [-4, -3]]

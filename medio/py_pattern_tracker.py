@@ -26,32 +26,3 @@ def pattern_tracker(text: str) -> int:
 
 if __name__ == "__main__":
     print(pattern_tracker("112233"))
-
-# Entrada
-# pattern_tracker("123")
-# Salida
-# 2
-# Entrada
-# pattern_tracker("12a34")
-# Salida
-# 2
-# Entrada
-# pattern_tracker("987654321")
-# Salida
-# 0
-# Entrada
-# pattern_tracker("01234567")
-# Salida
-# 7
-# Entrada
-# pattern_tracker("abc")
-# Salida
-# 0
-# Entrada
-# pattern_tracker("1a2b3c4")
-# Salida
-# 0
-# Entrada
-# pattern_tracker("112233")
-# Salida
-# 2

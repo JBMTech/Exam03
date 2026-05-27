@@ -21,25 +21,3 @@ def whisper_cipher(text: str, shift: int) -> str:
 
 if __name__ == "__main__":
     print(whisper_cipher("xyz", 3))
-
-
-# Entrada
-# whisper_cipher("hello", 3)
-# Salida
-# "khoor"
-# Entrada
-# whisper_cipher("Hello World!", 1)
-# Salida
-# "Ifmmp Xpsme!"
-# Entrada
-# whisper_cipher("xyz", 3)
-# Salida
-# "abc"
-# Entrada
-# whisper_cipher("ABC123def", 5)
-# Salida
-# "FGH123ijk"
-# Entrada
-# whisper_cipher("", 10)
-# Salida
-# ""
