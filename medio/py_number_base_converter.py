@@ -42,7 +42,3 @@ def number_base_converter(number: str, from_base: int, to_base: int) -> str:
         decimal_value = decimal_value // to_base
     
     return result
-
-
-if __name__ == "__main__":
-    print(number_base_converter("G", 16, 10))

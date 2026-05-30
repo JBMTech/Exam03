@@ -17,7 +17,3 @@ def whisper_cipher(text: str, shift: int) -> str:
         else:
             result += text[i]
     return result
-
-
-if __name__ == "__main__":
-    print(whisper_cipher("xyz", 3))

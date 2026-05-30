@@ -19,6 +19,3 @@ def bracket_validator(s: str) -> bool:
         result = s
     return True
 
-
-if __name__ == "__main__":
-    print(bracket_validator("{[]}"))

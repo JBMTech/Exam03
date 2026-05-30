@@ -22,7 +22,3 @@ def pattern_tracker(text: str) -> int:
                 count += 1
         i += 1
     return count
-
-
-if __name__ == "__main__":
-    print(pattern_tracker("112233"))

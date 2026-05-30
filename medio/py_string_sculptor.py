@@ -20,6 +20,3 @@ def string_sculptor(text: str) -> str:
             result += text[i]
         
     return result
-
-if __name__ == "__main__":
-    print(string_sculptor("hello"))
