@@ -1,6 +1,7 @@
 import unittest
 from py_pattern_tracker import pattern_tracker
 
+
 class TestPatternTracker(unittest.TestCase):
 
     def test_123(self):
@@ -23,6 +24,7 @@ class TestPatternTracker(unittest.TestCase):
 
     def test_repeated_digits(self):
         self.assertEqual(pattern_tracker("112233"), 2)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -40,5 +40,6 @@ class TestNumberBaseConverter(unittest.TestCase):
             "ERROR"
         )
 
+
 if __name__ == "__main__":
     unittest.main()

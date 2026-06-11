@@ -20,6 +20,5 @@ class TestStringSculptor(unittest.TestCase):
         self.assertEqual(string_sculptor(""), "")
 
 
-
 if __name__ == "__main__":
     unittest.main()

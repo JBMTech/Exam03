@@ -13,7 +13,7 @@ def number_base_converter(number: str, from_base: int, to_base: int) -> str:
         return "ERROR"
     if to_base < 2 or to_base > 36:
         return "ERROR"
-    
+
     number = number.upper()
 
     # ---------- Convertir de base origen a decimal ----------
@@ -22,17 +22,17 @@ def number_base_converter(number: str, from_base: int, to_base: int) -> str:
     for char in number:
         if char not in digits:
             return "ERROR"
-        
+
         value = digits.index(char)
 
         if value >= from_base:
             return "ERROR"
-        
+
         decimal_value = decimal_value * from_base + value
-    
+
     if decimal_value == 0:
         return "0"
-    
+
     # ---------- Convertir de decimal a base destino ----------
     result = ""
 
@@ -40,5 +40,5 @@ def number_base_converter(number: str, from_base: int, to_base: int) -> str:
         remainder = decimal_value % to_base
         result = digits[remainder] + result
         decimal_value = decimal_value // to_base
-    
+
     return result

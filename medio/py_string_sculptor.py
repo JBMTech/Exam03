@@ -18,5 +18,5 @@ def string_sculptor(text: str) -> str:
             count += 1
         else:
             result += text[i]
-        
+
     return result

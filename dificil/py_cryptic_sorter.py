@@ -7,6 +7,7 @@ def count_vowels(word: str) -> int:
             count += 1
     return count
 
+
 def cryptic_sorter(strings: list[str]) -> list[str]:
     """
     Escribe una función que ordene una lista de cadenas con prioridad
