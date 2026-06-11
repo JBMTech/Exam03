@@ -10,6 +10,8 @@ def bracket_validator(s: str) -> bool:
     - Devolver False si faltan pares o el anidamiento es incorrecto
     - Ignorar caracteres que no sean paréntesis
     """
+    s = ''.join(c for c in s if c in "()[]{}")
+
     result = " "
 
     while s:

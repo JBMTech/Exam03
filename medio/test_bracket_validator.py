@@ -25,6 +25,9 @@ class TestBracketValidator(unittest.TestCase):
     def test_missing_closing(self):
         self.assertFalse(bracket_validator("((())"))
 
+    def test_string_parentheses(self):
+        self.assertTrue(bracket_validator("hello(world)[test]{code}"))
+
     def test_empty_string(self):
         self.assertTrue(bracket_validator(""))
 
