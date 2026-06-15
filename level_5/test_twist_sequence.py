@@ -1,5 +1,5 @@
 import unittest
-from py_twist_sequence import twist_sequence
+from level_5.py_twist_sequence import twist_sequence
 
 
 class TestTwistSequence(unittest.TestCase):

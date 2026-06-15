@@ -1,5 +1,5 @@
 import unittest
-from py_whisper_cipher import whisper_cipher
+from level_6.py_whisper_cipher import whisper_cipher
 
 
 class WhisperCipher(unittest.TestCase):
