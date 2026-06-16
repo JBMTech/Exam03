@@ -1,5 +1,5 @@
 import unittest
-from level_3.py_inter import inter
+from py_inter import inter
 
 
 class Inter(unittest.TestCase):

@@ -1,5 +1,5 @@
 import unittest
-from level_3.py_hidenp import hidenp
+from py_hidenp import hidenp
 
 
 class Hidenp(unittest.TestCase):
