@@ -1,5 +1,5 @@
 import unittest
-from py_mirror_matrix import mirror_matrix
+from level_2.py_mirror_matrix import mirror_matrix
 
 
 class TestMirrorMatrix(unittest.TestCase):

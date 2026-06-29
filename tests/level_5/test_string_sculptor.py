@@ -1,5 +1,5 @@
 import unittest
-from py_string_sculptor import string_sculptor
+from level_5.py_string_sculptor import string_sculptor
 
 
 class TestStringSculptor(unittest.TestCase):

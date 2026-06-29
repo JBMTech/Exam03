@@ -1,5 +1,5 @@
 import unittest
-from py_echo_validator import echo_validator
+from level_2.py_echo_validator import echo_validator
 
 
 class EchoValidator(unittest.TestCase):

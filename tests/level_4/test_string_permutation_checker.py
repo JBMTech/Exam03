@@ -1,5 +1,5 @@
 import unittest
-from py_string_permutation_checker import string_permutation_checker
+from level_4.py_string_permutation_checker import string_permutation_checker
 
 
 class TestStringPermutationChecker(unittest.TestCase):
