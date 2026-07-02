@@ -1,5 +1,5 @@
 import unittest
-from level_1.py_bracket_validator import bracket_validator
+from src.level_1.py_bracket_validator import bracket_validator
 
 
 class TestBracketValidator(unittest.TestCase):

@@ -1,5 +1,5 @@
 import unittest
-from level_3.py_pattern_tracker import pattern_tracker
+from src.level_3.py_pattern_tracker import pattern_tracker
 
 
 class TestPatternTracker(unittest.TestCase):

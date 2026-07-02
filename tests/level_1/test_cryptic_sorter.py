@@ -1,5 +1,5 @@
 import unittest
-from level_1.py_cryptic_sorter import cryptic_sorter
+from src.level_1.py_cryptic_sorter import cryptic_sorter
 
 
 class TestCrypticSorter(unittest.TestCase):
