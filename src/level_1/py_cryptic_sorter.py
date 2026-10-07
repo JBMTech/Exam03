@@ -23,8 +23,30 @@ def cryptic_sorter(strings: list[str]) -> list[str]:
     - Mayúsculas y minúsculas mezcladas (tratar como minúsculas al ordenar)
     - Caracteres especiales (ignorarlos al contar vocales)
     """
-    return sorted(strings, key=lambda word: (
-        len(word),
-        word.lower(),
-        count_vowels(word))
-    )
+    result = strings.copy()
+
+    for i in range(len(result)):
+        for j in range(len(result) - 1 - i):
+
+            a = result[j]
+            b = result[j + 1]
+
+            # ¿Debe "a" ir después de "b"?
+            should_swap = False
+
+            if len(a) > len(b):
+                should_swap = True
+
+            elif len(a) == len(b):
+
+                if a.lower() > b.lower():
+                    should_swap = True
+
+                elif a.lower() == b.lower():
+                    if count_vowels(a) > count_vowels(b):
+                        should_swap = True
+
+            if should_swap:
+                result[j], result[j + 1] = result[j + 1], result[j]
+
+    return result
